@@ -9,3 +9,4 @@ Este projeto demonstra o uso dos padrões de design Singleton e Decorator.
 
 ## Desenvolvedor
 - Nome do Aluno: Kayke de Souza
+# UserRegistryProject
