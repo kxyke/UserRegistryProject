@@ -9,50 +9,49 @@ O projeto foi implementado em **Java**, devido à sua ampla adoção em sistemas
 
 ---
 
-## Integrantes do Grupo
+## Informações do Projeto
 
-- **Kayke de Souza - @kxyke** 
-
----
-
-## Motivação para a Linguagem
-
-Optamos por **Java** como linguagem de programação pelos seguintes motivos:
-1. **Suporte a Padrões de Projeto:** Java oferece bibliotecas e estruturas robustas para implementar os padrões de projeto utilizados.
-2. **Portabilidade:** Código Java pode ser executado em qualquer plataforma com a JVM (Java Virtual Machine).
-3. **Modularidade e Organização:** A estrutura de pacotes facilita a separação de responsabilidades e modularidade.
-
----
-
-## Funcionalidades do Sistema
-
-- **Registro de Usuários (Singleton):** Garante que apenas uma instância do registro seja criada durante a execução.
-- **Relatórios Personalizáveis (Decorator):** Permite adicionar funcionalidades dinâmicas, como cabeçalhos, bordas e formatações de cor, aos relatórios.
+| **Item**                   | **Descrição**                                                                                         |
+|----------------------------|-----------------------------------------------------------------------------------------------------|
+| **Linguagem**              | Java                                                                                               |
+| **Padrões de Design**      | Singleton (registro de usuários), Decorator (formatação de relatórios)                             |
+| **IDE recomendada**        | Visual Studio Code, IntelliJ IDEA ou Eclipse                                                      |
+| **Autores**                | @kxyke 
+            |
+| **Finalidade**             | Demonstrar conceitos de modularidade e flexibilidade com padrões de design em sistemas simples             |
 
 ---
 
 ## Estrutura do Projeto
 
-```plaintext
-UserRegistryProject
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   ├── registry    // Padrão Singleton
-│   │   │   │   └── UserRegistry.java
-│   │   │   ├── reports     // Padrão Decorator
-│   │   │   │   ├── BasicReport.java
-│   │   │   │   ├── BorderDecorator.java
-│   │   │   │   ├── ColorDecorator.java
-│   │   │   │   ├── HeaderDecorator.java
-│   │   │   │   └── Report.java
-│   │   │   └── Main.java   // Classe principal
-│   ├── test
-│   │   └── java
-│   │       └── tests       // Classes de teste
-│   │           ├── SingletonTest.java
-│   │           └── DecoratorTest.java
-├── README.md               // Documentação do projeto
+| **Pasta/Arquivo**        | **Descrição**                                                                                      |
+|--------------------------|--------------------------------------------------------------------------------------------------|
+| `src/main/java/registry` | Implementação do padrão Singleton para registro de usuários                                      |
+| `src/main/java/reports`  | Implementação do padrão Decorator para formatação de relatórios                                  |
+| `src/main/java/Main.java`| Classe principal do sistema                                                                      |
+| `README.md`              | Documentação do projeto                                                                          |
+| `bin/`                   | Pasta onde os arquivos compilados serão gerados                                                 |
+
+---
+
+## Pré-requisitos
+
+| **Requisito**             | **Detalhes**                                                                                       |
+|---------------------------|---------------------------------------------------------------------------------------------------|
+| **Java Development Kit**  | Versão 8 ou superior. Baixe em [oracle.com](https://www.oracle.com/java/technologies/javase-downloads.html). |
+| **Git**                   | Baixe e instale em [git-scm.com](https://git-scm.com/).                                           |
+| **Editor de Código**      | Recomenda-se Visual Studio Code, IntelliJ IDEA ou Eclipse.                                        |
+
+---
+
+## Instalação e Configuração
+
+| **Passo**                  | **Instrução**                                                                                   |
+|----------------------------|-------------------------------------------------------------------------------------------------|
+| **Clonar Repositório**     | 1. Abra o terminal<br>2. Execute: `git clone <URL_DO_REPOSITORIO>`<br>3. Acesse a pasta: `cd UserRegistryProject` |
+| **Compilar o Projeto**     | 1. Certifique-se de estar na pasta raiz do projeto<br>2. Execute: `javac -d bin src/main/java/**/*.java src/test/java/**/*.java` |
+| **Executar a Aplicação**   | 1. Na pasta raiz, execute: `java -cp bin Main`                                                  |
+| **Testar Funcionalidades** | 1. Testar Singleton: `java -cp bin tests.SingletonTest`<br>2. Testar Decorator: `java -cp bin tests.DecoratorTest` |
 
 ---
 
@@ -64,4 +63,4 @@ Ao executar o sistema, o menu inicial será exibido com a seguinte mensagem:
 
 ```plaintext
 Bem-vindo ao Sistema de Registro de Usuários e Relatórios!  
-Desenvolvido por: Kayke de Souza
+Desenvolvido por: Kayke de Souza  
