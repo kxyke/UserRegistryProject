@@ -16,8 +16,8 @@ O projeto foi implementado em **Java**, devido à sua ampla adoção em sistemas
 | **Linguagem**              | Java                                                                                               |
 | **Padrões de Design**      | Singleton (registro de usuários), Decorator (formatação de relatórios)                             |
 | **IDE recomendada**        | Visual Studio Code, IntelliJ IDEA ou Eclipse                                                      |
-| **Autores**                | @kxyke 
-            |
+| **Autores**                | @kxyke
+
 | **Finalidade**             | Demonstrar conceitos de modularidade e flexibilidade com padrões de design em sistemas simples             |
 
 ---
